@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>عرض الشتاء من أريچ - ARIG</title>
+  <style>
+    :root{--bg:#0b1020;--card:#111a2d;--accent:#d6b36a;--muted:#c8cbd3}
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Cairo",Arial,Helvetica,sans-serif;
+      background:linear-gradient(180deg,#081122 0%,#0a152d 100%);
+      color:#fff;
+    }
+    .container{max-width:720px;margin:40px auto;padding:20px}
+    .card{
+      background:linear-gradient(180deg,#111a2d 0%,#0b1224 100%);
+      border-radius:16px;
+      padding:24px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.4);
+      animation:fadeIn 0.8s ease-out;
+    }
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(20px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+    h1{font-size:24px;margin-bottom:8px;color:var(--accent)}
+    p{line-height:1.8;margin:10px 0;font-size:17px}
+    .prices{background:rgba(255,255,255,0.05);padding:14px;border-radius:12px;margin:14px 0}
+    .prices div{display:flex;justify-content:space-between;margin:6px 0;font-size:18px}
+    .total{background:rgba(214,179,106,0.1);border-radius:12px;padding:12px;margin:10px 0;font-weight:700;font-size:18px;display:flex;justify-content:space-between}
+    .offer{background:rgba(214,179,106,0.2);border:1px solid var(--accent);border-radius:12px;padding:14px;margin:14px 0;display:flex;justify-content:space-between;font-weight:800;font-size:20px}
+    .btn{
+      display:block;
+      width:100%;
+      padding:14px 0;
+      background:linear-gradient(90deg,#d6b36a,#f0d48a);
+      color:#000;
+      border:none;
+      border-radius:12px;
+      font-weight:800;
+      font-size:18px;
+      margin-top:14px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+    .btn:hover{opacity:0.9;transform:translateY(-2px)}
+    footer{text-align:center;color:var(--muted);font-size:14px;margin-top:20px}
+    @media (max-width:400px){
+      h1{font-size:20px}
+      p{font-size:15px}
+      .offer,.total{font-size:17px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>💬 عرض الشتاء من أريچ 🌧️</h1>
+
+      <p>العطور لو لوحدها 👇</p>
+      <div class="prices">
+        <div><span>🖤 توباكو فانيليا</span><span>500 جنيه</span></div>
+        <div><span>🤎 أمير العود</span><span>350 جنيه</span></div>
+        <div><span>☕ خمرة قهوة</span><span>350 جنيه</span></div>
+      </div>
+
+      <div class="total"><span>السعر خارج العرض للثلاث عطور</span><span>1200 جنيه 💰</span></div>
+      <div class="offer"><span>سعر العرض الخاص</span><span>900 جنيه 😍</span></div>
+
+      <p>كلهم حجم 50 مللي والعرض ساري لفترة محدودة 💎</p>
+
+      <button class="btn" onclick="window.open('https://wa.me/201559242036?text='+encodeURIComponent('أهلًا، أنا عايز أطلب عرض الشتاء من أريچ: التلاتة 50 مل بسعر 900 جنيه'))">
+        اضغط هنا لطلب العرض
+      </button>
+    </div>
+
+    <footer>© 2025 أريچ - ARIG | جميع الحقوق محفوظة</footer>
+  </div>
+</body>
+</html>
